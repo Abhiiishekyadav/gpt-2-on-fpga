@@ -1,12 +1,12 @@
 # gpt-2-on-fpga
 This repository consist of gpt-2 model implementation on fpga board:
 
-1) Pre-trained model has been leverages and done using Python in the Google-Colab & related (.ipynb) file provided in the model selection folder.
+1) Pre-trained model has been leverages and done using Python in the Google-Colab & related (.ipynb) file provided in the gpt-2 selection folder.
 
-2) Basic building blocks of GPT-2 decoder blocks are provided as a High-level synthesis repository. For different applications the mentioned template, the model's structure, and the trained weights aggregate into the high-level description of the model and are provided in different cpp files consist of 32-bit float model and 8-bit INT model descriptions.
+2) Basic building blocks of GPT-2 decoder blocks are provided as a Hardware repository. Consist of MHA block, ffn and tokenizer block. The obtained high-level description of the pre-trained model and later, transform into RTL logic through the HLS process using the Vitis-HLS compiler and the obtained RTL are provided in the RTL and IP integration folder.
+
+3) The PYNQ repository consist of overlay (driver) python script and other relevant files (bit, hwh) are given in overlay files of the pynq-overlay repository.
    
-3) The obtained high-level description of the fully-trained transform into RTL logic through the HLS process using the Vitis-HLS compiler and the obtained RTL are provided in the RTL and IP integration folder.
-The pynq overlay python script and other relevant files (bit, hwh, xmodel) are given in overlay files of the pynq-overlay repository and other vitis-ai folders consisting of Deep learning processor unit information.
-NOTE: 1) Each (.ipynb) file consists of the results of DPU mapping and generated (.xmodel) file and (.h5) file through the Vitis-ai compiler. This repository only consists of RTL implementation of the attention CNN model for the visdrone19 drone imagery dataset. To evaluate models for other applications you may follow the given procedure.
+NOTE: 1) Each (.ipynb) file consists of software results, driver file and ARM-CPU result. Additionally, all C++ files consist of different GPT-2 blocks code from scratch.
 
-In case of any inconvenience drop a mail to respective email id: pmi2017003@iiita.ac.in, yadav.49@iitj.ac.in
+In case of any inconvenience drop a mail to respective email id: m23eev006@iitj.ac.in, yadav.49@iitj.ac.in
