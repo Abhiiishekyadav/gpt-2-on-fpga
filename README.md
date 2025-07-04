@@ -9,4 +9,7 @@ This repository consist of gpt-2 model implementation on fpga board:
    
 NOTE: 1) Each (.ipynb) file consists of software results, driver file and ARM-CPU result. Additionally, all C++ files consist of different GPT-2 blocks code from scratch.
 
+PAPER-LINK:
+https://ieeexplore.ieee.org/abstract/document/11054269
+
 In case of any inconvenience drop a mail to respective email id: m23eev006@iitj.ac.in, yadav.49@iitj.ac.in
